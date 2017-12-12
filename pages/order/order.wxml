@@ -1,0 +1,47 @@
+<view class="container">
+  <view class='order-head'>
+    <block wx:for="{{order_type}}">
+      <text bindtap='onType' class="{{show==index?'active':''}}" data-id="{{item.id}}" data-cid="{{index}}">{{item.status}}</text>
+    </block>
+  </view>
+  <view class="order" wx:for="{{order_list}}" bindtap="onSkip" data-type="{{item._status.wait_ch}}" data-sn="{{item.sn}}">
+    <view class="order-list">
+      <text class="time">{{item.order_type}} {{item.system_time_format}}</text>
+      <text class="state">{{item._status.wait_ch}}</text>
+    </view>
+    <view class="order-list1">
+      <view class="lock-head">
+        <image class="head-img" src="{{item.header_pic}}"></image>
+        <image class="head-good" src="../images/identification.png"></image>
+      </view>
+      <view class='order-list-right'>
+        <text>服务人员:{{item.store_name}}</text>
+        <text>订单类型:{{item.ismake}}</text>
+        <text>服务地址:{{item.address_info}}</text>
+      </view>
+    </view>
+    <view class="order-list2" >
+     
+      <block bindtap="onSkip" wx:if="{{item._status.wait_ch=='待付款'}}" class='order-look'>
+        <text class='order-look'>立即付款</text>
+      </block>
+       <text wx:elif="{{item._status.wait_ch=='已完成'}}" class='order-look'>查看详情</text>
+      <text wx:elif="{{item._status.wait_ch=='待到达'}}" class='order-look'>查看详情</text>
+      <text wx:elif="{{item._status.wait_ch=='待评价'}}" class='order-look'>立即评价</text>
+      <text style='padding:0px' wx:elif="{{item._status.wait_ch=='已取消'}}" class='order-look'></text> 
+      <text wx:else class='order-look'>查看详情</text>
+       
+    </view>
+  </view>
+  <view wx:if="{{none}}" class='none'>你还没有相关的订单</view>
+</view>
+<view class="loading" hidden="{{!searchLoading}}">
+   <image src='../images/icon-loading.png' style="width:30rpx;height:30rpx;"></image> 
+  正在载入更多...
+</view>
+<view class="loading complete" hidden="{{!searchLoadingComplete}}">加载全部</view>
+<block wx:if="{{noNearby}}">
+  <view class="noNearby" bindtap='onReload'>
+    <text>{{nearby_con}}</text>
+  </view>
+</block>

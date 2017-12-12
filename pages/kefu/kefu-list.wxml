@@ -1,0 +1,39 @@
+<!--pages/kefu/kefu-list.wxml-->
+<view class='contain'>
+  <image  class='head-img' src='{{customer.image}}'></image>
+  <view class='cur'>
+    客服在线时间：{{customer.service_time}}
+  </view>
+  <view class='list'>
+    <view class='item'>
+      <text>在线客服</text>
+      <text class='iconfont icon-you'></text>
+      <button class='btn' open-type="contact"></button>
+    </view>
+    <view class='item' bindtap='onTel'>
+      <text>联系客服</text>
+      <text class='iconfont icon-you'></text>
+    </view>
+    <view class='item' bindtap='onIssue' data-id="0">
+      <text>订单问题</text>
+      <text class='iconfont icon-you'></text>
+    </view>
+    <view class='item' bindtap='onIssue' data-id="1">
+      <text>收费问题</text>
+      <text class='iconfont icon-you'></text>
+    </view>
+    <view class='item' bindtap='onIssue' data-id="2">
+      <text>产品问题</text>
+      <text class='iconfont icon-you'></text>
+    </view>
+    <view class='item' bindtap='onRefer'>
+      <text>反馈建议</text>
+      <text class='iconfont icon-you'></text>
+    </view>
+  </view>
+  <view class='footer' bindtap='onPhone'>
+    没找的想了解的问题?
+    <text class='iconfont icon-kefu'></text>
+    <text>联系客服</text>
+  </view>
+</view>

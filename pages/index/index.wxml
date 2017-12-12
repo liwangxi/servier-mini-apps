@@ -1,0 +1,77 @@
+<!--index.wxml-->
+<view class="container">
+  <view class='banner'>
+    <swiper class="swiper-around" indicator-dots="{{true}}" circular="true" autoplay="{{true}}" interval="{{3000}}" duration="{{500}}">
+      <block wx:for="{{banner}}">
+        <swiper-item>
+          <image src="{{item.img}}" />
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="location">
+      <view class="city">
+        <text>{{city}}</text>
+        <!-- <image src='../images/index_17.png'></image> -->
+      </view>
+      <text class='sign' bindtap='mall'>签到</text>
+    </view>
+  </view>
+  <view class="head">
+    <view class="head-list" bindtap="onReg">
+      <image src="{{column[0].image}}"></image>
+      <text>{{column[0].name}}</text>
+    </view>
+    <view class="head-list" bindtap="onJoin">
+      <image src="{{column[1].image}}"></image>
+      <text>{{column[1].name}}</text>
+    </view>
+    <view class="head-list" bindtap="onNews">
+      <image src="{{column[2].image}}"></image>
+      <text>{{column[2].name}}</text>
+    </view>
+    <view class="head-list" bindtap='onShop'>
+      <image src="{{column[3].image}}"></image>
+      <text>{{column[3].name}}</text>
+    </view>
+    <view class="head-list" bindtap='onKe'>
+      <image src="{{column[4].image}}"></image>
+      <text>{{column[4].name}}</text>
+      <contact-button session-from="weapp"></contact-button>
+    </view>
+  </view>
+  <view class='dynamic'>
+    <view class="new-order">
+      <image class='new-img' src="../images/index_06.png"></image>
+      <view class='swiper-content'>
+        <swiper class='swiper-up' vertical="true" circular="false" autoplay="{{true}}" interval="{{3000}}" duration="{{200}}">
+          <block wx:for="{{lock_list}}">
+            <swiper-item class='new-content'>
+              <view class='new-list'>
+                <image src="{{item.touxiang}}"></image>
+                <text class='label'>师傅</text>
+                <text class='laber-item'>{{item.true_name}} 好评率{{item.rate}} 共接{{item.count}}单</text>
+              </view>
+              <view class='new-list'>
+                <image src="{{user_list[index].portrait}}"></image>
+                <text class='label'>用户</text>
+                <text class='laber-item'>{{user_list[index].username}}刚刚发布了开锁订单</text>
+              </view>
+            </swiper-item>
+          </block>
+        </swiper>
+      </view>
+    </view>
+  </view>
+  <view class="link-content">
+    <view class='link-list' bindtap='onLock' id="{{lock_type[2].id}}">
+      <image mode='widthFix' src="../images/index_13.png"></image>
+    </view>
+    <view class='link-list'>
+      <image bindtap='onLock' id="{{lock_type[1].id}}" style='margin-right:10rpx;' mode='widthFix' src="../images/index_14.png"></image>
+      <image bindtap='onLock' id="{{lock_type[3].id}}" mode='widthFix' src="../images/index_15.png"></image>
+    </view>
+    <view bindtap='onLock' id="{{lock_type[4].id}}" class='link-list' style='margin-bottom:0;'>
+      <image mode='widthFix' src="../images/index_16.png"></image>
+    </view>
+  </view>
+</view>

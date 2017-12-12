@@ -1,0 +1,93 @@
+<view class="contain">
+  <view class='container'>
+    <view class="nearby" bindtap='onNearbyl'>
+      <view class="lock-head">
+        <image class="head-img" src="{{store_info.header_pic}}"></image>
+        <image mode='widthFix' class="head-good" src="../images/identification.png"></image>
+      </view>
+      <view class="nearby-center">
+        <view class="nearby-list1">
+          <text class="lock-name">{{store_info.true_name}}</text>
+          <image src="../images/index02_3.png"></image>
+          <text>{{other_info.favorable_rate}}</text>
+        </view>
+        <view class="nearby-list2">
+          <text>备案号：{{store_info.license_code}}</text>
+        </view>
+      </view>
+      <view class="nearby-right">
+        <text class="icon-dianhua iconfont"></text>
+      </view>
+    </view>
+    <view class='order-det'>
+      <view class='list'>
+        <text class='item-left'>下单时间: {{order.system_time_format}}</text>
+        <text class='item-right'>夜间服务费: {{order.goods_money}}元</text>
+      </view>
+      <view class='list'>
+        <text class='item-left'>服务类型:{{order.order_type}}</text>
+        <text class='item-right'>优惠券:无</text>
+      </view>
+      <view class='list'>
+        <text class='item-left'>商品总计:￥{{order.paid_amount}}元</text>
+        <text class='item-right'>实付款: <text style="color:#d33a31">￥{{order.paid_amount}}</text></text>
+      </view>
+    </view>
+    <view class='order-img'>
+      <view class='item-img'>
+        <text>服务前照片</text>
+        <view>
+        <block wx:for="{{order.images}}">
+          <image src='{{item}}'></image>
+        </block>
+        </view>
+      </view>
+      <view class='item-img'>
+        <text>上传服务照片</text>
+        <view>
+          <image bindtap='teke_photo1' src='{{img1}}'></image>
+          <image bindtap='teke_photo2' src='{{img2}}'></image>
+        </view>
+      </view>
+    </view>
+    <view class='order-evaluate'>
+      <view class="eva_img_all">
+        <text>到达速度</text>
+        <block wx:for="{{stars}}">
+          <image class="star-image" src="{{key > item ?selectedSrc : normalSrc}}">
+            <view class="item" data-key="{{item+1}}" bindtap="selectLeft"></view>
+          </image>
+        </block>
+      </view>
+      <view class="eva_img_all">
+        <text>服务态度</text>
+        <block wx:for="{{stars1}}">
+          <image class="star-image" src="{{num > item ?selectedSrc : normalSrc}}">
+            <view class="item" data-num="{{item+1}}" bindtap="selectLeft1"></view>
+          </image>
+        </block>
+      </view>
+      <view class="eva_img_all">
+        <text>专业技术</text>
+        <block wx:for="{{stars2}}">
+          <image class="star-image" src="{{mid > item ?selectedSrc : normalSrc}}">
+            <view class="item" data-mid="{{item+1}}" bindtap="selectLeft2"></view>
+          </image>
+        </block>
+      </view>
+    </view>
+    <view class='order-label'>
+      <block wx:for="{{tag_list}}">
+        <view bindtap='onTag' data-id="{{item.id}}" class="{{show==index?'label-item active':'label-item'}}">
+          <text>{{item.name}}</text>
+          <text class='iconfont icon-zan'></text>
+        </view>
+      </block>
+    </view>
+    <textarea bindinput='other_info' class='evaluate-content' placeholder='请填写你的评价'>
+       
+    </textarea>
+    <button class='btn' bindtap="onEvaluate">提交评价</button>
+
+  </view>
+</view>

@@ -1,0 +1,26 @@
+/* pages/shop/add-address.wxss */
+.add-list{
+    display: flex;
+    padding-top: 50rpx;
+    flex-direction: column;
+    font-size: 30rpx;
+    color: #666666;
+}
+.list{
+    display: flex;
+    flex-direction: row;
+    padding: 20rpx;
+    border-bottom: 1px solid #eee;
+    align-items: center;
+}
+.list input{
+    flex: auto;
+    padding-left: 20rpx;
+}
+.btn{
+    margin-top: 60rpx;
+    width: 80%;
+    margin-left: 10%;
+    background: #00a0e9;
+    color: #fff;
+}

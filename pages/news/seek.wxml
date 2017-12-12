@@ -1,0 +1,36 @@
+<view class="new-search">
+  <input placeholder='搜索关键词'></input>
+  <image src="../images/news1_03.png"></image>
+  <text class='search-btn'>搜索</text>
+  <view class="search-list">
+    <text>凯迪仕锁芯升级</text>
+    <text>凯迪仕锁芯升级</text>
+    <text>凯迪仕锁芯升级</text>
+  </view>
+</view>
+<view class="seek-history">
+  <text class='history-head'>搜索历史</text>
+  <view class='history-list'>
+    <text>最新智能锁发布会</text>
+    <text>最新智能锁发布会</text>
+  </view>
+</view>
+<view class="seek-hot">
+  <text class='hot-head'>热门搜索</text>
+  <view class='hot-list'>
+    <text class='active'>1、</text>
+    <text>凯迪仕锁芯升级</text>
+  </view>
+  <view class='hot-list'>
+    <text class='active'>2、</text>
+    <text>凯迪仕锁芯升级</text>
+  </view>
+  <view class='hot-list'>
+    <text class='active'>3、</text>
+    <text>凯迪仕锁芯升级</text>
+  </view>
+  <view class='hot-list'>
+    <text >4、</text>
+    <text>凯迪仕锁芯升级</text>
+  </view>
+</view>

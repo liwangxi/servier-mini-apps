@@ -1,0 +1,41 @@
+<!--pages/news/seek-list.wxml-->
+<view class="new-search">
+  <input placeholder='搜索关键词'></input>
+  <image src="../images/news1_03.png"></image>
+  <text class='search-btn'>搜索</text>
+</view>
+<scroll-view scroll-y="true">
+  <view class='new-content'>
+    <view class='new-list'>
+      <view class='list-left'>
+        <image src='../images/ofo.jpg'></image>
+      </view>
+      <view class='list-right'>
+        <view class='news-det'>ofo小黄车召开发布会，宣布推 出最新款共享单车
+        </view>
+        <view class='news-source'>
+          <text class='news-web'>新华网</text>
+          <view class='news-rg'>
+            <text class='news-review'>3711评论</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='new-list'>
+      <view class='list-left'>
+        <image src='../images/ofo.jpg'></image>
+      </view>
+      <view class='list-right'>
+        <view class='news-det'>ofo小黄车召开发布会，宣布推 出最新款共享单车
+        </view>
+        <view class='news-source'>
+          <text class='news-web'>新华网</text>
+          <view class='news-rg'>
+            <text class='news-review'>3711评论</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='without'>没有更多结果了</view>
+</scroll-view>

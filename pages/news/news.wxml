@@ -1,0 +1,40 @@
+<!-- <view class="new-search">
+  <input placeholder='搜索关键词'></input>
+  <image src="../images/news1_03.png"></image>
+</view> -->
+<!-- <scroll-view style="height: 100%;" scroll-y="true" > -->
+  <view class='new-content'>
+    <view class='new-head' catchtap='onType'>
+      <block wx:for="{{news_type}}" >
+        <text  class="{{show==index?'active':''}}" data-id="{{item.id}}">{{item.type}}</text>
+      </block>
+      <!-- <text>行业动态</text>
+      <text>锁业动态</text>
+      <text>行业会议</text> -->
+    </view>
+    <block wx:for="{{news_list}}">
+      <view class='new-list' bindtap="onNews" id="{{item.id}}">
+        <view class='list-left'>
+          <image src="{{item.image}}"></image>
+        </view>
+        <view class='list-right'>
+          <view class='news-det'>
+            {{item.title}}
+          </view>
+          <view class='news-source'>
+            <text class='news-web'>{{item.name}}</text>
+            <view class='news-rg'>
+              <text class='news-review'>{{item.count}}评论</text>
+              <text wx:if="{{item.recommend!=null}}" class='news-hot'>{{item.recommend}}</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+  <view class="loading" hidden="{{!searchLoading}}">
+    <!-- <image src='../images/icon-loading.png' style="width:30rpx;height:30rpx;"></image> -->
+    正在载入更多...
+  </view>
+  <view class="loading complete" hidden="{{!searchLoadingComplete}}">加载全部</view>
+<!-- </scroll-view> -->

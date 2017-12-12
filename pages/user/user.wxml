@@ -1,0 +1,27 @@
+<!--pages/order/user.wxml-->
+<view class="contain">
+  <view class='head'>
+    <view>
+      <image src="{{userInfo.avatarUrl}}"></image>
+      <text>{{userInfo.nickName}}</text>
+    </view>
+  </view>
+  <view class='list'>
+    <view class='item' bindtap='onNews'>
+      <text>我的头条</text>
+      <text class='iconfont icon-you'></text>
+    </view>
+    <!-- <view class='item' bindtap='onOreder'>
+      <text>商城订单</text>
+      <text class='iconfont icon-you'></text>
+    </view> -->
+    <view class='item' bindtap='onCell'>
+      <text>我的收藏</text>
+      <text class='iconfont icon-you'></text>
+    </view>
+    <!-- <view class='item' bindtap='onDis'>
+      <text>优惠卷</text>
+      <text class='iconfont icon-you'></text>
+    </view> -->
+  </view>
+</view>

@@ -1,0 +1,20 @@
+<!--pages/shop/add-address.wxml-->
+<view class='add-list'>
+  <view class='list'>
+    <text>收货人姓名:</text>
+    <input></input>
+  </view>
+  <view class='list'>
+    <text>手机号码:</text>
+    <input></input>
+  </view>
+  <view class='list'>
+    <text>所在地区:</text>
+    <input></input>
+  </view>
+  <view class='list'>
+    <text>详细地址:</text>
+    <input></input>
+  </view>
+  <button class='btn'>保存</button>
+</view>

@@ -1,0 +1,44 @@
+<view class="container">
+  <view class="head">
+    <view class="lock-head">
+      <image class="head-img" src="{{store_info.header_pic}}"></image>
+      <image class="head-good" src="../images/identification.png"></image>
+    </view>
+    <view class='lock-list'>
+      <text class="lock-name">{{store_info.true_name}}</text>
+      <image src="../../images/index02_3.png"></image>
+      <text>{{store_info.favorable_rate}}</text>
+    </view>
+    <view class='lock-list'>
+      备案号:{{store_info.license_code}}
+    </view>
+    <!-- <text>200米以内</text> -->
+  </view>
+  <view class="center">
+    <view class="list">
+      <text>下单时间:</text>
+      <text>{{order.system_time_format}}</text>
+    </view>
+    <view class="list">
+      <text>服务类型:</text>
+      <text>{{order.order_type}}</text>
+    </view>
+    <view class="list">
+      <text>夜间服务费</text>
+      <text>￥{{order.night_money}}元</text>
+    </view>
+    <view class="list">
+      <text>人工服务费</text>
+      <text >￥{{order.paid_amount}}元</text>
+    </view>
+    <view wx:if="{{order.order_advance_charge>0}}" class="list">
+      <text>预付款</text>
+      <text>￥-{{order.order_advance_charge}}元</text>
+    </view>
+    <view class="list">
+      <text>商品总计:</text>
+      <text>￥{{order.real_amount}}元</text>
+    </view>
+  </view>
+</view>
+<button bindtap='onPay' class='btn'>确认支付</button>

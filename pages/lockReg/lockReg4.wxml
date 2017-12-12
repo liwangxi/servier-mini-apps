@@ -1,0 +1,19 @@
+<view class="container">
+  <view class='reg-head'>
+    <image mode='widthFix' style='width:100%' src='../images/lock4_02.png'></image>
+  </view>
+  <view class='reg-content'>
+    <view class='reg-title'>
+      <text>正在审核</text>
+      <view>
+        <text>1-3</text> 个工作日完成
+      </view>
+    </view>
+    <view class='reg-img'>
+      <image mode='widthFix' src="../images/lock_03.png"></image>
+    </view>
+  </view>
+  <view class='btn-content' bindtap='onStep'>
+    <button class='btn'>完成</button>
+  </view>
+</view>

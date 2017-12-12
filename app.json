@@ -1,0 +1,93 @@
+{
+  "pages": [
+    "pages/index/demo",
+    "pages/index/index",
+    "pages/user/user-shop-order",
+    
+    "pages/lockReg/qiye3",
+    "pages/lockReg/qiye2",
+    "pages/lockReg/qiye1",
+    "pages/lockReg/qiye4",
+    "pages/lockReg/lockReg3",
+    "pages/lockReg/lockReg2",
+    "pages/lockReg/lockReg1",
+    "pages/shop/shop-order",
+    "pages/order/order-detail",
+    "pages/index/home/service",
+    "pages/order/order",
+    "pages/news/news-details",
+    "pages/index/home/mate",
+    "pages/news/news",
+    "pages/news/seek",
+    "pages/news/seek-list",
+    "pages/index/home/home",
+    "pages/index/home/home-service",
+    "pages/join/join-firm",
+    "pages/lockReg/lockReg4",
+    "pages/user/user",
+    "pages/join/join-list",
+    "pages/index/home/pay",
+    "pages/index/home/coming",
+    "pages/index/home/evaluate",
+    "pages/nearby/nearby",
+    "pages/nearby/nearby-detail",
+    "pages/firm/firm-list",
+    "pages/kefu/kefu-list",
+    "pages/kefu/kefu-detail",
+    "pages/kefu/kefu-refer",
+    "pages/kefu/kefu-success",
+    "pages/shop/shop-index",
+    "pages/shop/shop-detail",
+    "pages/shop/shop-earn",
+    "pages/shop/shop-put",
+    "pages/shop/shop-address",
+    "pages/shop/shop-success",
+    "pages/shop/add-address",
+    "pages/kefu/kefu",
+    "pages/user/user-discount",
+    "pages/user/user-collect"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#3d99ff",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle": "#fff",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "pages/images/index_09.png",
+        "selectedIconPath": "pages/images/index1_09.png"
+      },
+      {
+        "pagePath": "pages/order/order",
+        "text": "订单",
+        "iconPath": "pages/images/index_10.png",
+        "selectedIconPath": "pages/images/index1_10.png"
+      },
+      {
+        "pagePath": "pages/nearby/nearby",
+        "text": "附近服务",
+        "iconPath": "pages/images/index_11.png",
+        "selectedIconPath": "pages/images/index1_11.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "个人中心",
+        "iconPath": "pages/images/index_12.png",
+        "selectedIconPath": "pages/images/index1_12.png"
+      }
+    ],
+    "color": "#5b5b5b",
+    "selectedColor": "#3d99ff",
+    "backgroundColor": "#fff"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

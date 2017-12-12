@@ -1,0 +1,9 @@
+<!--pages/kefu/kefu.wxml-->
+<view class='contain'>
+  <image mode='widthFix' src='../images/firm_02.png'></image>
+  <view class='btn'>
+    <text class='iconfont icon-kefu'></text>
+    <text>联系客服</text>
+  </view>
+  <text class='time'>客服在线时间:9：00-21：00</text>
+</view>

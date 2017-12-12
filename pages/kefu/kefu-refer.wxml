@@ -1,0 +1,13 @@
+<!--pages/kefu/kefu-refer.wxml-->
+<view class='contain'>
+  <text class='head'>您有什么问题或建议想对我们说？</text>
+  <view class='title'>
+    <text>您的主题:</text>
+    <input bindinput='bindTitle'></input>
+  </view>
+  <textarea bindinput="bindCentent" placeholder='填写问题描述:'></textarea>
+  <text class='hint'>(*≧▽≦*)清详细描述您遇到的问题，有助于我们快
+速定位并解决问题，或留下您宝贵的建议或意见，我
+们会认真进行评估！</text>
+  <button class='btn' bindtap='onSuggest'>提交建议</button>
+</view>

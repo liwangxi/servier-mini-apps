@@ -1,0 +1,57 @@
+/* pages/nearby-detail/nearby-detail.wxss */
+.container{
+  display: flex;
+  flex-direction: column;
+}
+.head{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    font-size: 26rpx;
+    color:#666;
+    margin-top: 30px;
+}
+.lock-head{
+    margin-right: 30rpx;
+    margin-left: 30rpx;
+    position: relative;
+}
+.head-img{
+    width: 164rpx;
+    height: 164rpx;
+    border-radius: 50%;
+}
+.head-good{
+    width:64rpx;
+    height:20rpx; 
+    position: absolute;
+    bottom:20rpx;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.lock-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rpx;
+}
+.lock-list image{
+   width: 32rpx;
+    height: 32rpx;
+}
+.lock-name{
+    font-size: 36rpx;
+    margin-right: 10rpx;
+    color: #000;
+}
+.service-img{
+  width: 607rpx;
+  height: 263rpx;
+  margin: 80rpx auto;
+}
+
+
+
+

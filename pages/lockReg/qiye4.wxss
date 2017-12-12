@@ -1,0 +1,44 @@
+/* pages/lockReg/lockReg4.wxss */
+.container{
+	padding: 20rpx;
+	box-sizing: border-box;
+}
+.reg-content{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 100%;
+	text-align: center;
+}
+.reg-title{
+	padding-top: 58rpx;
+	padding-bottom: 48rpx;
+}
+.reg-title text{
+	font-size: 36rpx;
+	color: #474747;
+	margin-bottom: 5rpx;
+}
+.reg-title view{
+	font-size: 34rpx;
+}
+.reg-title view text{
+	font-size:34rpx;
+	color: #d43737;
+}
+.reg-img{
+	width: 100%;
+}
+.reg-img image{
+	width: 100%;
+}
+.btn-content{
+	padding:0 60rpx;
+	box-sizing: border-box;
+}
+.btn{
+	background: #3d99ff;
+	width: 100%;
+	color: #fff;
+}
+

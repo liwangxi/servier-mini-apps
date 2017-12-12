@@ -1,0 +1,150 @@
+/* pages/nearby-detail/nearby-detail.wxss */
+.head{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    font-size: 26rpx;
+    color:#666;
+    margin-top: 30px;
+}
+.lock-head{
+    margin-right: 30rpx;
+    margin-left: 30rpx;
+    position: relative;
+}
+.head-img{
+    width: 164rpx;
+    height: 164rpx;
+    border-radius: 50%;
+}
+.head-good{
+    width:64rpx;
+    height:20rpx; 
+    position: absolute;
+    bottom:20rpx;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.lock-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.lock-list image{
+   width: 32rpx;
+    height: 32rpx;
+}
+.lock-name{
+    font-size: 36rpx;
+    margin-right: 10rpx;
+    color: #000;
+}
+.center{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40rpx;
+}
+.list{
+    color: #000;
+    border-bottom: 1px solid #dedfdf;
+    padding: 30rpx;
+    font-size:30rpx; 
+}
+.list text:first-child{
+    width: 30%;
+    margin-right: 30rpx;
+}
+.list text:last-child{
+  flex: auto;
+  text-align: right;
+}
+.btn{
+  width: 90%;
+  margin-left: 5%;
+  background: #00a0e9;
+  color: #fff;
+  margin-top: 80rpx;
+}
+.approve{
+    padding:2rpx 10rpx;
+    border-radius: 12rpx;
+    border:1px solid #ff0000;
+}
+/* pages/firm/firm-detail.wxss */
+/* .contain{
+    width: 96%;
+    margin: auto;
+}
+.firm-list{
+    padding: 20rpx 2%;
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    font-size: 26rpx;
+    color: #151515;
+}
+.firm-list image{
+    width: 100%;
+    margin-top: 10rpx;
+    margin-bottom: 10rpx;
+}
+.firm-title{
+    font-size: 32rpx;
+} */
+image{
+  width: 100%;
+  height: 100%;
+}
+.footer{
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  background: #fff;
+  height: 80rpx;
+  width: 100%;
+  border-top: 1px solid #ccc;
+  box-shadow: 1px 1px 5px 1px #ccc;
+}
+.footer image{
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+}
+.footer-item{
+  flex: 1;
+  text-align: center;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  color: #727171;
+  font-size: 30rpx;
+  justify-content: center;
+}
+.footer-item image{
+  margin:0 20rpx;
+}
+.footer-item button{
+  background: #fff;
+  border: 0;
+  font-size:30rpx;
+  color:  #727171;
+  display: inline-block;
+  padding: 0;
+  line-height: normal;
+  margin: 0;
+}
+button::after{
+  width: 100;
+  border: 0;
+}
+/* .footer-item text{
+  margin: auto;
+} */
+
+
+
+

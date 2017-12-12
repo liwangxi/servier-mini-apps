@@ -1,0 +1,67 @@
+/* pages/lockReg/lockReg4.wxss */
+
+.container {
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+
+.reg-content {
+  display: flex;
+  flex-direction: column;
+  padding: 60rpx;
+  box-sizing: border-box;
+}
+
+.form-list {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 12rpx;
+}
+
+.list-name {
+  width: 23%;
+  font-size: 26rpx;
+  color: #293a4d;
+  text-align: right;
+  margin-right: 3%;
+  margin-top: 22rpx;
+}
+
+.list-input:-moz-placeholder {
+  color: #afafaf;
+}
+
+.list-input {
+  width: 72%;
+  height: 80rpx;
+  padding: 0 23rpx;
+  border-radius: 12rpx;
+  background: #f5f5f5;
+  font-size: 26rpx;
+  color: #444;
+}
+
+.yanzen {
+  width: 27%;
+  height: 80rpx;
+  color: #fff;
+  background: #3d99ff;
+  font-size: 26rpx;
+  border-radius: 12rpx;
+  line-height: 80rpx;
+  text-align: center;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.btn-content {
+  padding: 0 60rpx;
+  box-sizing: border-box;
+}
+
+.btn {
+  background: #3d99ff;
+  width: 100%;
+  color: #fff;
+}

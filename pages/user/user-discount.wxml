@@ -1,0 +1,5 @@
+<!--pages/user/user-discount.wxml-->
+<view class='content'>
+  <image style='width:100%;' mode='widthFix' src='../images/index_14.png'></image>
+  <image style='width:100%;' mode='widthFix' src='../images/index_14.png'></image>
+</view>

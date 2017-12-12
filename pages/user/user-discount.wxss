@@ -1,0 +1,4 @@
+/* pages/user/user-discount.wxss */
+.content{
+  padding: 20rpx;
+}

@@ -1,0 +1,12 @@
+<view class="container">
+    <view class="reg-content">
+        <text class="iconfont icon-dianhua"></text>
+        <input  value="" placeholder="请输入手机号码" id="input_mobile" bindinput="input_mobile"/>
+    </view>
+    <view class="reg-content" >
+        <text class="iconfont icon-pinglun"></text>
+        <input bindinput="input_code"  value="" placeholder="请输入验证码"/>
+  <button class="code" bindtap="onCode" disabled="{{isdisable}}">{{verifyInfo}}</button>
+    </view>
+    <button class="btn" bindtap="onPlace">立即验证</button>
+</view>

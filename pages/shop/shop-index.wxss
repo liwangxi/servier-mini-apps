@@ -1,0 +1,127 @@
+/* pages/shop/shop-index.wxss */
+.contain{
+    display: flex;
+    flex-direction: column;
+}
+.head{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+.back-img{
+    width: 100%;
+    height: 324rpx;
+}
+.user-content{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background: 0;
+    justify-content: center;
+    color: #fff;
+    width: 100%;
+}
+.user-content image{
+    width: 128rpx;
+    height: 128rpx;
+    margin:40rpx auto 5rpx;
+    border-radius: 50%;
+}
+.user-name{
+    margin: 10rpx auto;
+    font-size: 36rpx;
+}
+.part{
+    margin:20rpx auto;
+    font-size:30rpx; 
+}
+.part .iconfont{
+  font-size: 26rpx;
+  margin-left: 5rpx;
+}
+.tab-list{
+    width: 100%;
+    height: 80rpx;
+    background: #478edd;
+    font-size: 30rpx;
+    color: #fff;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+}
+.tab-list text{
+    flex: 1;
+    text-align: center;
+    height: 100%;
+    align-items: center;
+    line-height: 80rpx;
+}
+.tab-list text:nth-child(2){
+    border-right: 1rpx solid #1972d4;
+    border-left: 1rpx solid #1972d4;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+}
+.content-head{
+    display: flex;
+    flex-direction: row;
+    height: 70rpx;
+    box-sizing: border-box;
+    border-bottom: 1px solid #eeeeee;
+    width: 100%;
+    align-items: center
+}
+.content-head-title{
+    flex: 1;
+    text-align: center
+}
+.content-head-price{
+    display: flex;
+    flex:1;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center
+}
+.content-head-price image{
+    width:13rpx;
+    height: 25rpx;
+    margin-left: 10rpx;
+}
+.list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10rpx;
+    background: #fff;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+    padding: 10rpx;
+    box-sizing: border-box;
+    font-size: 32rpx;
+}
+.item image{
+    width: 100%;
+    border-radius: 20rpx;
+}
+.shop-price{
+    font-size: 28rpx;
+}
+.shop-price text{
+  margin-left: 20rpx;
+}
+.shop-price .iconfont{
+  font-size:12px;
+}
+.shop-price text:first-child{
+    color: #d43737;
+}

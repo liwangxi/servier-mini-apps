@@ -1,0 +1,18 @@
+<swiper class="swiper-around" indicator-dots="{{true}}" circular="true" autoplay="{{true}}" interval="{{3000}}" duration="{{500}}">
+  <block wx:for="{{banner}}">
+    <swiper-item>
+      <image src="{{item.img}}" />
+    </swiper-item>
+  </block>
+</swiper>
+<view style='margin-bottom:100rpx;'>
+  <block wx:for="{{type_det_img}}">
+    <image style='width:100%;' mode='widthFix' src='{{item}}'></image>
+  </block>
+</view>
+
+<view class='foot'>
+  <block wx:for="{{type_det_list}}">
+    <text bindtap='onForm' data-name="{{item.name}}" data-id="{{item.id}}">{{item.name}}</text>
+  </block>
+</view>

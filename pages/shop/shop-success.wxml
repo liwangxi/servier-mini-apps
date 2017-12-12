@@ -1,0 +1,10 @@
+<!--pages/shop/shop-success.wxml-->
+<view class='contain'>
+  <view class='success-icon'>
+    <image src='../images/success.png'></image>
+    <text>兑换成功</text>
+  </view>
+  <text>商品将在7个工作日内为您</text>
+  <text>寄出商品请注意查收！</text>
+  <button class='btn'>完成</button>
+</view>

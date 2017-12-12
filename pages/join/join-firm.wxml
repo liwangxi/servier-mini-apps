@@ -1,0 +1,40 @@
+<view class="join-firm-head">
+  <image mode='widthFix' src="{{firm_detail.info_pic}}"></image>
+</view>
+<view class='join-firm-content'>
+  {{firm_detail.description}}
+</view>
+<view class='join-firm-product'>
+  <view class='product-head'>
+    <text>热销产品</text>
+    <image src="../images/firm-detail.png"></image>
+  </view>
+  <scroll-view class='product-scroll' scroll-x="true" style="width:100%;">
+    <block wx:for="{{firm_detail.product}}">
+      <view class='product-list'>
+        <image class='product-img' src='{{item.img}}'></image>
+        <text class="product-name">{{item.name}}</text>
+        <text class='product-price'>￥{{item.price}}</text>
+      </view>
+    </block>
+    <view class='product-list'>
+      <image class='product-img' src='../images/product1.jpg'></image>
+      <text class="product-name">海尔新款上新T541</text>
+      <text class='product-price'>￥300.90</text>
+    </view>
+  </scroll-view>
+</view>
+<view class='firm-adder'>
+  <view class='adder-list'>
+    <text class='list-name'>企业地址:</text>
+    <text class='list-det'>{{firm_detail.address}}</text>
+    <image class='list-img' src="../images/firm-ico1.png"></image>
+  </view>
+  <view class='adder-list'>
+    <text class='list-name'>联系电话:</text>
+    <text class='list-det' bindtap='onPhone'>{{firm_detail.tel}}</text>
+    <image class='list-img' src="../images/firm-ico2.png"></image>
+  </view>
+  <map longitude="{{firm_detail.latitude}}" latitude="{{firm_detail.longitude}}" scale="14" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" class='add-map'></map>
+  <text style="font-size:28rpx;color:#464646;">{{firm_detail.address}}</text>
+</view>

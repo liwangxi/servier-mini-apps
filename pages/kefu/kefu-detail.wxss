@@ -1,0 +1,26 @@
+/* pages/kefu/kefu-detail.wxss */
+.contain{
+    padding: 40rpx 25rpx;
+    width: 100%;
+    box-sizing: border-box;
+    font-size:30rpx;
+    color: #b5b5b6; 
+    display: flex;
+    flex-direction: column;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+}
+.item-head{
+    padding: 15rpx;
+    background: #efefef;
+    font-size: 30rpx;
+    color: #3e3a39;
+}
+.item-content{
+    padding: 15rpx;
+    font-size: 24rpx;
+    color: #727171;
+
+}

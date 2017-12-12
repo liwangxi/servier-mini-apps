@@ -1,0 +1,12 @@
+<swiper class='swiper-list' autoplay="{{true}}" indicator-dots="{{true}}" circular="true" circular="true">
+  <block wx:for="{{reg_banner}}">
+    <swiper-item class="swiper-around">
+      <image src="{{item.img}}" />
+    </swiper-item>
+  </block>
+
+</swiper>
+<view class='btn-content'>
+  <navigator url="../lockReg/qiye1" class='firm'> 企业注册</navigator>
+  <navigator url="../lockReg/lockReg1" class='lock'> 锁匠注册</navigator>
+</view>

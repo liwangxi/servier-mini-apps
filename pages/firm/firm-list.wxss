@@ -1,0 +1,60 @@
+.swiper-list {
+  width: 100%;
+  height: 948rpx;
+}
+
+.swiper-around image {
+  width: 80%;
+  margin-left: 10%;
+  height: 720rpx;
+  opacity: 1;
+  border-radius: 16rpx;
+  z-index: 100;
+  margin-top: 70rpx;
+  box-shadow: 1px 1px 5px 1px #ccc;
+}
+
+.swiper-around {
+  height: 770rpx;
+  box-sizing: border-box;
+}
+
+.dian {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.dian text {
+  background: #ccc;
+  width: 16rpx;
+  height: 16rpx;
+  border-radius: 50%;
+  margin: 0 20rpx;
+}
+
+.btn-content {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+
+.btn-content navigator {
+  color: #fff;
+  background: #3d99ff;
+  border-radius: 12rpx;
+  width: 45%;
+  text-align: center;
+  height: 75rpx;
+  line-height: 75rpx;
+  font-size: 32rpx;
+}
+
+.lock {
+  margin-left: 10%;
+}

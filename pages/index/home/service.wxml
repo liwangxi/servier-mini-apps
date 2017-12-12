@@ -1,0 +1,21 @@
+<view class="container">
+  <view class="head">
+    <view class="lock-head">
+      <image class="head-img" src="{{other_info.header_pic}}"></image>
+      <image class="head-good" src="../../images/identification.png"></image>
+    </view>
+    <view class='lock-list'>
+      <text class="lock-name">{{other_info.store_name}}</text>
+      <image src="../../images/index02_3.png"></image>
+      <text>{{other_info.favorable_rate}}</text>
+    </view>
+    <view class='lock-list'>
+      备案号:{{other_info.license_code}}
+    </view>
+    <view class='lock-list'>
+      <text style='font-size:60rpx;' class='iconfont icon-dianhua'></text>
+    </view>
+    <!-- <text>200米以内</text> -->
+  </view>
+  <image bindtap="call_locker" class='service-img' src="../../images/working.png"></image>
+</view>

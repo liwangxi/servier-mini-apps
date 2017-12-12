@@ -1,0 +1,34 @@
+<!--pages/nearby/nearby.wxml-->
+<view class="container">
+  <block wx:for="{{list}}">
+    <view class="nearby" bindtap='onNearbyl' data-mid="{{item.id}}">
+      <view class="lock-head">
+        <image class="head-img" src="{{item.header_pic}}"></image>
+        <image mode='widthFix' class="head-good" src="../images/identification.png"></image>
+      </view>
+      <view class='nearby-lock-detail'>
+        <view class="nearby-center">
+          <view class="nearby-list1">
+            <text class="lock-name">{{item.name}}</text>
+            <image src="../images/index02_3.png"></image>
+            <text>{{item.favorable_rate}}</text>
+          </view>
+          <view class="nearby-list2">
+            <text>备案号：{{item.license_code}}</text>
+          </view>
+        </view>
+        <view class="nearby-right">
+          <text class="icon-location2 iconfont"></text>
+          <text>{{item.juli}}</text>
+        </view>
+      </view>
+    </view> 
+  </block>
+
+  <block wx:if="{{noNearby}}">
+    <view class="noNearby">
+      <text>{{nearby_con}}</text>
+    </view>
+  </block>
+
+</view>

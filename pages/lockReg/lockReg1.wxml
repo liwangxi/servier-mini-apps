@@ -1,0 +1,28 @@
+<view class="container">
+  <view class='reg-head'>
+    <image mode='widthFix' style='width:100%' src='../images/lock1_02.png'></image>
+  </view>
+  <view class='reg-content'>
+    <view class='form-list'>
+      <text class='list-name'>手机号</text>
+      <input class='list-input' auto-focus  bindinput="input_mobile" type='number' id="input_mobile"  placeholder='请输入您的手机号'></input>
+    </view>
+    <view class='form-list'>
+      <text class='list-name' >验证码</text>
+      <input class='list-input' type='number' bindinput="input_code" style="width: 45%" placeholder='请输入验证码'></input>
+      <button class="yanzen" bindtap="onCode" disabled="{{isdisable}}">
+      {{verifyInfo}}</button>
+    </view>
+    <view class='form-list'>
+      <text class='list-name'>密码</text>
+      <input type='password' bindinput="onPassword1" class='list-input' placeholder='请输入密码用于登录'></input>
+    </view>
+    <view class='form-list'>
+      <text class='list-name'>确认密码</text>
+      <input bindblur="verify1" type='password' bindinput="onPassword2" class='list-input' placeholder='请确认你的密码'></input>
+    </view>
+  </view>
+  <view class='btn-content'>
+  <button class='btn' bindtap='onStep'>下一步</button>
+  </view>
+</view>

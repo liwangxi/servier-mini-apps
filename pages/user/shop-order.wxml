@@ -1,0 +1,14 @@
+<!--pages/user/shop-order.wxml-->
+<view class='tab-list'>
+  <text>全部</text>
+  <text>待付款</text>
+  <text>已付款</text>
+  <text>已取消</text>
+</view>
+<view class='list'>
+  <view class='item'>
+    <view class='top'></view>
+  </view>
+</view>
+
+

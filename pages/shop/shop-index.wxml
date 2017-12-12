@@ -1,0 +1,37 @@
+<!--pages/shop/shop-index.wxml-->
+<view class='contain'>
+  <view class='head'>
+    <image class='back-img' src='../images/integral.png'></image>
+    <view class='user-content'>
+      <image src='{{user.portrait}}'></image>
+      <text class='user-name'>{{user.name}}</text>
+      <view class='part'>
+        <text>积分: {{user.points}}</text>
+        <text class='iconfont icon-iconc1'></text>
+      </view>
+    </view>
+    <view class='tab-list'>
+      <text bindtap='onEarn'>收支明细</text>
+      <text >赚取积分</text>
+    </view>
+  </view>
+  <view class='content'>
+    <view class='content-head'>
+      <view class='content-head-title'>综合</view>
+      <view class='content-head-price'>
+        <text>积分</text>
+        <image src='../images/inte-down.png'></image>
+      </view>
+    </view>
+    <view class='list'>
+      <view wx:for="{{product_list}}" data-cid="{{item.id}}" class='item' bindtap='onDetail'>
+        <image mode="widthFix" class='shop-img' src='{{item.logo}}'></image>
+        <text class='shop-name'>{{item.name}}</text>
+        <view class='shop-price'>
+          <text>{{item.points}}</text>
+          <text class='iconfont icon-iconc1'></text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

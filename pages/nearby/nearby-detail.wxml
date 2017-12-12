@@ -1,0 +1,52 @@
+<view class="container">
+  <view class="head">
+    <view class="lock-head">
+      <image class="head-img" src="{{detail.header_pic}}"></image>
+      <image class="head-good" src="../images/identification.png"></image>
+    </view>
+    <view class='lock-list'>
+      <text class="lock-name">{{detail.name}}</text>
+      <image src="../images/index02_3.png"></image>
+      <text>{{detail.favorable_rate}}</text>
+    </view>
+    <view class='lock-list'>
+      备案号:{{detail.license_code}}
+    </view>
+    <!-- <text>200米以内</text> -->
+  </view>
+  <view class="center">
+    <view class="list">
+      <text>接单次数:</text>
+      <text>{{detail.order_count}}次</text>
+    </view>
+    <view class="list">
+      <text>好评率:</text>
+      <text>{{detail.favorable_rate*20}}%</text>
+    </view>
+    <view class="list">
+      <text>联系他</text>
+      <text bindtap='onPhone'>{{detail.phone}}</text>
+    </view>
+    <view class="list">
+      <text>地址:</text>
+      <text>{{detail.province}}{{detail.city}}{{detail.area}}{{detail.street}}</text>
+    </view>
+  </view>
+</view>
+<!-- <button class='btn'>找他帮忙</button> -->
+<!-- <view class="footer">
+  <view class='footer-item' bindtap="onIntransit">
+    <button open-type='share'>转发</button>
+    <image src='../images/like-01.jpg'></image>
+  </view>
+  <view class='footer-item'>
+    <text>查看</text>
+    <image src='../images/like-02.jpg'></image>
+    <text>{{pv}}</text>
+  </view>
+  <view class='footer-item'>
+    <text>点赞</text>
+    <image bindtap='onLike' src='../images/like-03.png'></image>
+    <text>{{fabulous}}</text>
+  </view>
+</view> -->

@@ -1,0 +1,57 @@
+/* pages/kefu/kefu-.wxss */
+.contain{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	font-size: 26rpx;
+}
+.head-img{
+	width: 100%;
+  height: 280rpx;
+}
+.cur{
+	width: 100%;
+	text-align: center;
+	color: #727171;
+	padding: 10rpx 0;
+	background: #f7f8f8;
+}
+.list{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+.item{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 20rpx;
+	border-bottom: 1px solid #eee;
+	font-size: 30rpx;
+	justify-content: space-between;
+	width: 100%;
+	box-sizing: border-box;
+	position: relative;
+	overflow: hidden;
+}
+.btn{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0;
+}
+.footer{
+  color: #727171;
+  font-size: 26rpx;
+  position: fixed;
+  bottom: 70rpx;
+  text-align: center;
+  width: 100%;
+}
+.footer text{
+  color: #3d99ff;
+  margin-left: 20rpx;
+}

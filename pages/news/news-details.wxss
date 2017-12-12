@@ -1,0 +1,186 @@
+/* pages/news/new-details.wxss */
+
+.contain {
+  padding: 20rpx;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.news-name {
+  font-size: 48rpx;
+  color: #000;
+  margin-top: 10rpx;
+}
+
+.news-source {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 26rpx;
+  padding: 10rpx 0;
+  align-items: center;
+}
+
+.news-lf {
+  flex: auto;
+}
+
+.news-rg {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.news-review {
+  padding: 10rpx 15rpx;
+  background: #eee;
+  border-radius: 25rpx;
+}
+
+.news-hot {
+  background: #d43737;
+  color: #fff;
+  padding: 10rpx;
+  margin-left: 10rpx;
+  border-radius: 8rpx;
+}
+.news-content {
+  margin-top: 10rpx;
+  font-size: 26rpx;
+  color: #464646;
+}
+
+.news-content image {
+  width: 100%;
+}
+
+.news-operation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-bottom: 20rpx solid #eee;
+  padding:0 20%;
+  box-sizing: border-box;
+}
+.news-likes {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  margin-top: 80rpx;
+  padding-bottom: 60rpx;
+}
+
+.news-likes image {
+  width: 100rpx;
+  height: 100rpx;
+  margin: auto;
+}
+
+.review {
+  padding-bottom: 100rpx;
+}
+
+.review-head {
+  font-size: 34rpx;
+  color: #464646;
+  margin-top: 20rpx;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}
+
+.review-details {
+  display: flex;
+  flex-direction: column;
+  padding: 20rpx 20rpx;
+  box-sizing: border-box;
+  border-bottom: 1px solid #eee;
+}
+
+.review-user {
+  display: flex;
+  flex-direction: row;
+  /*justify-content: space-between;*/
+  align-items: center;
+}
+
+.review-user image {
+  width: 95rpx;
+  height: 95rpx;
+  margin-right: 20rpx;
+}
+
+.user-cen {
+  display: flex;
+  flex-direction: column;
+  font-size: 24rpx;
+  color: #bfbfbf;
+  flex: auto;
+}
+
+.user-cen-name {
+  color: #e7ae00;
+  font-size: 30rpx;
+  margin-bottom: 5rpx;
+}
+
+.like-num {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: baseline;
+  font-size: 24rpx;
+  color: #7b7b7b;
+}
+
+.like-num image {
+  width: 36rpx;
+  height: 36rpx;
+}
+
+.review-content {
+  padding-left: 115rpx;
+  box-sizing: border-box;
+  font-size: 32rpx;
+  margin-bottom: 5rpx;
+}
+
+.foot {
+  position: fixed;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  background: #fff;
+  padding: 20rpx;
+  box-sizing: border-box;
+  bottom: 0;
+  width: 100%;
+}
+
+.foot input {
+  bottom: 0;
+  height: 66rpx;
+  border-radius: 33rpx;
+  padding-left: 33rpx;
+  border: 1px solid #eee;
+  flex: auto;
+}
+
+.foot-read {
+  font-size: 24rpx;
+  display: flex;
+  flex-direction: row;
+  padding: 10rpx 20rpx;
+  background: #3d99ff;
+  margin-left: 10rpx;
+  color: #fff;
+  border-radius: 15rpx;
+}
+
+.foot image {
+  width: 34rpx;
+  height: 34rpx;
+  margin-left: 30rpx;
+}

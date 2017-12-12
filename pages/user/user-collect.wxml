@@ -1,0 +1,22 @@
+<!--pages/user/user-collect.wxml-->
+
+<!--pages/user/user-headline.wxml-->
+<view class='contain'>
+  <view class='list'>
+    <block wx:for="{{my_list}}">
+      <view class='item'>
+        <image class='item-img' src='{{item.image}}'></image>
+        <view class='item-content'>
+          <view class='item-detial'>
+            {{item.title}}
+          </view>
+          <view>
+            <!-- <text class='item-name'>新华网</text> -->
+            <text class='item-review'>{{item.recommend}}评论</text>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+  <!-- <view wx:esle class='none'>你还没有发布新闻</view> -->
+</view>

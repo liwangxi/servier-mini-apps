@@ -1,0 +1,106 @@
+<!--pages/index/home/home.wxml-->
+<block wx:if="{{zhuan}}">
+  <view class="container">
+    <view class='head'>请务必输入真实有效地址</view>
+    <view class='content'>
+      <view class='list'>
+        <text class='iconfont icon-user'></text>
+        <text class='item-laber'>姓名:</text>
+        <input bindinput='onName' class='item-content' placeholder='请输联系入姓名'></input>
+      </view>
+      <view class='list'>
+        <text class='iconfont icon-dianhua'></text>
+        <text class='item-laber'>联系方式:</text>
+        <input bindinput='onPhone' type="number" class='item-content' placeholder='请输入联系人电话'></input>
+      </view>
+      <view class='list'>
+        <text class='iconfont icon-location2'></text>
+        <text class='item-laber'>地址:</text>
+        <view class='item-content' bindtap='choosemap'>{{adress_name}}</view>
+        <view class='item-rg' bindtap='choosemap'>
+          <image src="../../images/dinwei.png"></image>
+          <text>定位</text>
+        </view>
+      </view>
+      <view class='list'>
+        <text class='iconfont icon-18'></text>
+        <text class='item-laber'>详细地址:</text>
+        <input bindinput='bindChange_door' class='item-content' placeholder='请填写小区门牌号'></input>
+      </view>
+      <view class='list'>
+        <text class='iconfont icon-Service-type'></text>
+        <text class='item-laber'>服务类型:</text>
+        <text>{{typeName}}</text>
+      </view>
+      <view class='list'>
+        <text class='iconfont icon-shijian'></text>
+        <text class='item-laber'>时间:</text>
+        <view class='item-time'>
+
+          <picker wx:if="{{haspicker === true}}" mode="date" value="{{date}}" start="2017-09-01" end="2020-12-31" bindchange="bindDateChange">
+            <view class="picker">
+              {{date}}
+            </view>
+          </picker>
+          <picker wx:if="{{haspicker === true}}" mode="time" value="{{time}}" start="00:00" end="23:59" bindchange="bindTimeChange">
+            <view class="picker" style='margin-left:10rpx;'>
+              {{time}}
+            </view>
+          </picker>
+
+          <text wx:else>及时单</text>
+        </view>
+        <view class='item-rg' bindtap='switch1Change'>
+          <view class='switch active' wx:if="{{yuyue}}">
+            <text></text>
+          </view>
+          <view class='switch' wx:else>
+            <text></text>
+          </view>
+          <text>{{yuyuetime}}</text>
+        </view>
+      </view>
+      <view class='list'>
+        <text class='iconfont icon-riliicon'></text>
+        <text class='item-laber'>备注:</text>
+        <input bindinput='other_info' class='item-content' placeholder='填写备注信息'></input>
+      </view>
+      <view class='cur'>
+        添加现场照片
+      </view>
+      <view class='add-img'>
+        <image bindtap='teke_photo1' src='{{img1}}'></image>
+        <image bindtap='teke_photo2' src='{{img2}}'></image>
+      </view>
+    </view>
+    <button class='btn' bindtap='rotate'>提交订单</button>
+    <text class='server-det'>《上门服务费说明》</text>
+  </view>
+</block>
+<block wx:else>
+  <view class='container1' wx:if="{{waiting_img}}">
+    <text class='show-head'>正在为您匹配服务人员</text>
+    <text class='show-head1'>请您耐心等待...</text>
+    <view class='time-set'>
+      <image class='show-img' src="../../images/clock_1.png"></image>
+      <text class='timer' style='color:#d33a31;font-size:50rpx;'>{{time_next}}</text>
+    </view>
+
+    <view>
+      已为您通知
+      <text style="color:#d33a31">{{t}}</text>位服务人员
+    </view>
+  </view>
+  <view class='container2' wx:else>
+    <text class='show-head'>对不起,没有找到服务人员</text>
+    <text class='show-head1'>请您耐心等待...</text>
+    <image class='show-img1' src="../../images/meiyou.png"></image>
+    <!-- <button class='btn' bindtap='onPlace'>重新呼叫</button> -->
+    <!-- <button class='btn1'>取消下单</button> -->
+    <view class='kefu'>
+      <image src='../../images/kefu.png'></image>
+      <text>联系客服</text>
+      <button open-type="contact"></button>
+    </view>
+  </view>
+</block>

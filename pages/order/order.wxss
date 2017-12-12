@@ -1,0 +1,135 @@
+/* pages/index/home/order_list.wxss */
+
+@-webkit-keyframes gogogo {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(180deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+.none{
+  text-align: center;
+  color: #666;
+  font-size: 30rpx;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%)
+}
+.loading {
+  text-align: center;
+  font-size: 34rpx;
+  color: #ccc;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.loading image {
+  animation:gogogo 2s infinite linear ;
+}
+.container {
+  background: #fff;
+  overflow: hidden;
+}
+
+.order-head {
+  display: flex;
+  flex-direction: row;
+  background: #f2f5f7;
+  color: #3e3a39;
+  font-size: 30rpx;
+}
+
+.order-head text {
+  text-align: center;
+  flex: 1;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+
+.order {
+  border-bottom: 10px solid #f2f5f7;
+  display: flex;
+  flex-direction: column;
+  padding: 30rpx 30rpx 0 30rpx;
+}
+
+.order-list, .order-list1, .order-list2 {
+  font-size: 26rpx;
+  color: #3e3a39;
+  display: flex;
+  flex-direction: row;
+  padding: 20rpx 0;
+  border-top: 1px solid #eee;
+  align-items: center;
+}
+
+.order-list-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.order-list-right text {
+  line-height: 40rpx;
+  height: 40rpx;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.lock-head {
+  margin-right: 25rpx;
+  position: relative;
+}
+
+.head-img {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.head-good {
+  width: 64rpx;
+  height: 20rpx;
+  position: absolute;
+  bottom: 15rpx;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.time, .state {
+  flex: auto;
+}
+
+.state {
+  text-align: right;
+}
+
+.order-list2 {
+  justify-content: flex-end;
+}
+
+.order-look {
+  padding: 5rpx 10rpx;
+  border: 1px solid #eee;
+  border-radius: 15rpx;
+  margin-left: 20rpx;
+}
+
+.noNearby {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30rpx;
+  color: #ccc;
+}
+
+.active {
+  color: #3d99ff;
+}

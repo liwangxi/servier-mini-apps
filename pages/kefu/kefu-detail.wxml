@@ -1,0 +1,8 @@
+<view class="contain">
+  <block wx:for="{{customer_list}}">
+    <view class='list'>
+      <text class='item-head'>{{item.title}}</text>
+      <text class='item-content'>{{item.text}}</text>
+    </view>
+  </block>
+</view>

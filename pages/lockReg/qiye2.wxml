@@ -1,0 +1,55 @@
+<view class="container">
+  <view class='reg-head'>
+    <image mode='widthFix' style='width:100%' src='../images/lock2_02.png'></image>
+  </view>
+  <view class='reg-content'>
+    <view class='form-list'>
+      <text class='list-name'>公司名称</text>
+      <input class='list-input' bindinput='bindName' placeholder='请输入公司名称'></input>
+    </view>
+    <view class='form-list'>
+      <text class='list-name'>联系电话</text>
+      <input class='list-input' bindinput='bindPhone' placeholder='请输入企业联系电话'></input>
+    </view>
+    <view class='form-list'>
+      <text class='list-name'>电子邮箱</text>
+      <input class='list-input' bindinput='bindEmail' placeholder='请输入企业电子邮箱'></input>
+    </view>
+    <view class='form-list'>
+      <text class='list-name'>公司地址</text>
+      <picker style="line-height:80rpx;flex:auto;" mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+        <view class='list-input' style='width:100%;box-sizing:border-box;'>
+          {{region[0]}}-{{region[1]}}-{{region[2]}}
+        </view>
+      </picker>
+    </view>
+    <view class='form-list'>
+      <text class='list-name'>详细地址</text>
+      <input class='list-input' bindinput='bindAddress' placeholder='请输入公司详细地址'></input>
+    </view>
+    <view class='form-list'>
+      <text class='list-name'>营业执照号</text>
+      <input class='list-input' bindinput='bindAddress' placeholder='请输入营业执照' bindtap='bindLicense'></input>
+    </view>
+    <view class='form-list'>
+      <text class='list-name'>上传凭证</text>
+      <view class='list-img'>
+        <view class='img-content'>
+          <view class='img-item'>
+            <image bindtap='teke_photo' src="{{license}}"></image>
+            <text class='zhuyi'>请上传营业执照正本</text>
+          </view>
+          <view class='img-item'>
+            <image bindtap='teke_photo1' src="{{authorization}}"></image>
+            <text class='zhuyi'>请上传公司授权书</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class='btn-content'>
+    <button class='btn' bindtap='onStep'>下一步</button>
+  </view>
+
+</view>

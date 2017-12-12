@@ -1,0 +1,50 @@
+<view class="container">
+  <view class='reg-head'>
+    <image mode='widthFix' style='width:100%' src='../images/lock3_02.png'></image>
+  </view>
+  <view class='reg-content'>
+    <view class='form-list'>
+      <text class='list-name'>姓名</text>
+      <input class='list-input' bindinput='bindTrueName' placeholder='请输入真实姓名'></input>
+    </view>
+    <view class='form-list'>
+      <text class='list-name'>身份证号</text>
+      <input class='list-input' bindinput='bindCard' type='idcard' placeholder='请输入法人身份证号'></input>
+    </view>
+    <view class='form-list'>
+      <text class='list-name'>上传证件</text>
+      <view class='list-img'>
+        <view class='img-content'>
+          <view class='img-just img-item'>
+            <image bindtap='teke_photo' src="{{card_images}}"></image>
+          </view>
+          <view class='img-versa img-item'>
+            <image bindtap='teke_photo1' src="{{card_images1}}"></image>
+          </view>
+        </view>
+        <view class='zhuyi'>请上传法人身份证的正面照和背面照</view>
+      </view>
+    </view>
+    <view class='form-list'>
+      <text class='list-name'>上传头像</text>
+      <view class='list-img'>
+        <view class='img-content'>
+          <view class='img-item'>
+           <image bindtap='teke_photo2' src="{{logo}}"></image>
+          </view>
+        </view>
+        <view class='zhuyi'>请上传本人头像</view>
+      </view>
+    </view>
+  </view>
+  <view class='btn-content'>
+  <button class='btn' bindtap='onStep'>下一步</button>
+  </view>
+  <view class='read'>
+    <view class='read-click'>
+      <image src="../images/lock3_04.png"></image>
+      <text>阅读并同意</text>
+    </view>
+    <text style='color:blue;'>《兼职劳动协议》</text>
+  </view>
+</view>

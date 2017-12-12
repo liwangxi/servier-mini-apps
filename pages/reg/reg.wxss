@@ -1,0 +1,47 @@
+/* pages/reg/reg.wxss */
+.container{
+    display: flex;
+    flex-direction: column;
+    font-size: 30rpx;
+    margin-top: 35rpx;
+}
+.reg-content{
+    display: flex;
+    flex-direction: row;
+    border-top:1px solid #eee;
+    padding-left: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+}
+.container .reg-content:nth-child(2){
+    border-bottom: 1px solid #eee;
+}
+.iconfont{
+  margin-right: 20rpx;
+}
+.reg-content input{
+    flex: auto;
+    color: #898989;
+    height: 80rpx;
+}
+.code{
+    background: #f9f9f9;
+    height: 80rpx;
+    color: #00a0e9;
+    box-sizing: border-box;
+    border: 0;
+    width: 250rpx;
+    text-align: center;
+    font-size: 30rpx;
+    line-height: 80rpx;
+    border-radius: 0;
+}
+.btn{
+    width: 80%;
+    margin: 150rpx auto;
+    color: #fff;
+    background: #00a0e9;
+    border-radius: 20rpx;
+    font-size: 32rpx;
+}

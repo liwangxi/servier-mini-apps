@@ -1,0 +1,21 @@
+/* pages/kefu/kefu-success.wxss */
+.contain{
+    display: flex;
+    flex-direction: column;
+}
+.contain image{
+    width: 100%;
+}
+.contain text{
+    background: #f7f8f8;
+    font-size:26rpx;
+    padding: 20rpx 0; 
+    text-align: center;
+}
+.btn{
+    width: 90%;
+    margin-left: 5%;
+    background: #00a0e9;
+    color: #fff;
+    margin-top: 360rpx;
+}

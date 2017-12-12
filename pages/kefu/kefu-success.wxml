@@ -1,0 +1,6 @@
+<!--pages/kefu/kefu-success.wxml-->
+<view class='contain'>
+  <image mode='widthFix' src='../images/firm_02.png'></image>
+  <text>感谢您的宝贵意见，您的支持是我们最大的追求！</text>
+  <button bindtap="close" class='btn'>关闭</button>
+</view>

@@ -1,0 +1,54 @@
+<view class='container'>
+  <view class="nearby" bindtap='onNearbyl'>
+    <view class="lock-head">
+      <image class="head-img" src="{{other_info.header_pic}}"></image>
+      <image mode='widthFix' class="head-good" src="../../images/identification.png"></image>
+    </view>
+    <view class="nearby-center">
+      <view class="nearby-list1">
+        <text class="lock-name">{{other_info.true_name}}</text>
+        <image src="../../images/index02_3.png"></image>
+        <text>{{other_info.favorable_rate}}</text>
+      </view>
+      <view class="nearby-list2">
+        <text>备案号：{{other_info.license_code}}</text>
+      </view>
+    </view>
+    <view class="nearby-right" bindtap='call_locker'>
+      <text class="icon-dianhua iconfont"></text>
+    </view>
+  </view>
+  <view class="timer">
+    <text>{{clock}}{{micro_second}}</text>
+    <text>服务人员正在赶来...</text>
+  </view>
+  <view class='list'>
+    <text class='item-laber'>服务类型:</text>
+    <text class='item-content'>开锁</text>
+  </view>
+  <view class='list'>
+    <text class='item-laber'>地址:</text>
+    <text class='item-content'>{{order_detail.city}}{{order_detail.area}}{{address_info}}{{order_detail.address}}</text>
+  </view>
+  <view class='list'>
+    <text class='item-laber'>下单时间:</text>
+    <text class='item-content'>{{system_time_format}}</text>
+  </view>
+  <view wx:if="{{onInsmake}}" class='list'>
+    <text class='item-laber'>预约时间:</text>
+    <text class='item-content'>{{yu_time}}</text>
+  </view>
+  <view class='list'>
+    <text class='item-laber'>简要内容:</text>
+    <text class='item-content'>{{order_detail.other_info}}</text>
+  </view>
+  <view class='cur'>
+    现场照片
+  </view>
+  <view class='add-img'>
+  <block wx:for="{{img_order}}">
+    <image src="{{item}}"></image>
+  </block>
+  </view>
+  <!-- <button class='btn'>取消订单</button> -->
+</view>

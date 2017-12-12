@@ -1,0 +1,44 @@
+/* pages/kefu/kefu-refer.wxss */
+.contain{
+    padding: 40rpx 25rpx;
+    width: 100%;
+    box-sizing: border-box;
+    font-size:30rpx;
+    color: #b5b5b6; 
+    display: flex;
+    flex-direction: column;
+}
+.head{
+    margin-bottom: 10rpx;
+}
+.title{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    color: #727171;
+    box-sizing: border-box;
+    padding: 25rpx;
+    border-radius: 10rpx;
+    background: #f9f9f9;
+    align-items: center;
+}
+.title input{
+    padding-left: 10rpx;
+}
+.contain textarea{
+    width: 100%;
+    color: #727171;
+    box-sizing: border-box;
+    padding: 25rpx;
+    border-radius: 10rpx;
+    background: #f9f9f9;
+    margin-top: 30rpx;
+    margin-bottom: 30rpx;
+}
+.btn{
+    width: 90%;
+    margin-left: 5%;
+    background: #00a0e9;
+    color: #fff;
+    margin-top: 300rpx;
+}

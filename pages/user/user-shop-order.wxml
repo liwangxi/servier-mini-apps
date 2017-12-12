@@ -1,0 +1,71 @@
+<!--pages/user/shop-order.wxml-->
+<view class='tab-list'>
+  <text class='active'>全部</text>
+  <text>待付款</text>
+  <text>已付款</text>
+  <text>已完成</text>
+</view>
+<view class='list'>
+  <view class='item'>
+    <view class='top'>
+      <text>下单时间：2017年10月21 10：00</text>
+      <text>已付款</text>
+    </view>
+    <view class='centen'>
+      <image src='../images/reg1_03.png'></image>
+      <view>
+        <text>名称:锁匠师傅、开锁工具包五件套</text>
+        <text>颜色:蓝黑</text>
+      </view>
+    </view>
+    <view class='bottom'>
+      <text>商品合计:350积分+39.00(含运费12.00)</text>
+      <!-- <text>实付金额：￥39.00</text> -->
+    </view>
+    <view class='item-btn'>
+      <text>查看详情</text>
+    </view>
+  </view>
+  <view class='item'>
+    <view class='top'>
+      <text>下单时间：2017年10月21 10：00</text>
+      <text>已付款</text>
+    </view>
+    <view class='centen'>
+      <image src='../images/reg1_03.png'></image>
+      <view>
+        <text>名称:锁匠师傅、开锁工具包五件套</text>
+        <text>颜色:蓝黑</text>
+      </view>
+    </view>
+    <view class='bottom'>
+      <text>商品合计:350积分+39.00(含运费12.00)</text>
+      <!-- <text>实付金额：￥39.00</text> -->
+    </view>
+    <view class='item-btn'>
+      <text>查看详情</text>
+    </view>
+  </view>
+  <view class='item'>
+    <view class='top'>
+      <text>下单时间：2017年10月21 10：00</text>
+      <text>已付款</text>
+    </view>
+    <view class='centen'>
+      <image src='../images/reg1_03.png'></image>
+      <view>
+        <text>名称:锁匠师傅、开锁工具包五件套</text>
+        <text>颜色:蓝黑</text>
+      </view>
+    </view>
+    <view class='bottom'>
+      <text>商品合计:350积分+39.00(含运费12.00)</text>
+      <!-- <text>实付金额：￥39.00</text> -->
+    </view>
+    <view class='item-btn'>
+      <text>查看详情</text>
+    </view>
+  </view>
+</view>
+
+

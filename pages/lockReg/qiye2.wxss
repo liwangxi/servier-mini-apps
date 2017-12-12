@@ -1,0 +1,94 @@
+/* pages/lockReg/lockReg4.wxss */
+.container{
+	padding: 20rpx;
+	box-sizing: border-box;
+}
+.list-input:-moz-placeholder {
+  color: #afafaf;
+}
+.reg-content{
+	display: flex;
+	flex-direction: column;
+	padding: 60rpx;
+	box-sizing: border-box;
+}
+.form-list{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	margin-bottom: 12rpx;
+}
+.list-name{
+	width: 23%;
+	font-size: 26rpx;
+	color: #293a4d;
+	text-align: right;
+	margin-right:3%;
+	margin-top: 22rpx;
+}
+.list-input{
+	flex: auto;
+	height: 80rpx;
+	padding: 0 23rpx;
+	border-radius: 12rpx;
+	background: #f5f5f5;
+	color: #444;
+	font-size: 26rpx;
+}
+
+.list-img{
+	width: 72%;
+	display: flex;
+	flex-direction: column;
+	color: #dd3a3a;
+	font-size: 26rpx;
+}
+.zhuyi{
+	text-align: center;
+	font-size: 22rpx;
+	padding-top: 10rpx;
+}
+.img-content{
+	display: flex;
+	flex-direction: row;
+}
+.img-item{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin-right: 5px;
+}
+.img-item image{
+	width:200rpx;
+	height:200rpx;
+}
+.read{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: center;
+	font-size: 26rpx;
+	margin-top: 10px;
+	color: #afafaf;
+}
+.read-click{
+	display: flex;
+	flex-direction: row;
+}
+.read-click image{
+	width: 20rpx;
+	height: 20rpx;
+	margin-top: 8rpx;
+	margin-right: 8rpx;
+}
+.btn-content{
+	padding:0 60rpx;
+	box-sizing: border-box;
+}
+.btn{
+	background: #3d99ff;
+	width: 100%;
+	color: #fff;
+}
+

@@ -1,0 +1,67 @@
+<!--pages/news/new-details.wxml-->
+<import src="../../wxParse/wxParse.wxml" />
+<view class='contain'>
+  <view class='new-content'>
+    <view class='news-name'>
+      {{news_det.title}}
+    </view>
+    <view class='news-source'>
+      <view class='news-lf'>
+        <text class='news-web'>{{news_det.name}}</text>
+        <text class='news-time'>{{news_det.time}}</text>
+      </view>
+      <view class='news-rg'>
+        <!-- <text class='news-review'>{{news_det.count}}评论</text> -->
+        <text class='news-hot'>热点</text>
+      </view>
+    </view>
+    <view class="news-content">
+      <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+    </view>
+
+  </view>
+</view>
+<view class='news-operation'>
+  <view class='news-likes' bindtap='onLike'>
+    <image wx:if="{{is_like>0}}" src="../images/new6.png"></image>
+    <image wx:else src="../images/new5.png"></image>
+    <text>{{liked}}人喜欢</text>
+  </view>
+  <!-- <view class='news-likes' bindtap='onShare'>
+    <image wx:if="{{is_like>0}}" src="../images/share.png"></image>
+    <image wx:else src="../images/share-anti.png"></image>
+    <text>{{liked}}转发</text>
+  </view> -->
+</view>
+
+<view class='review'>
+  <text class='review-head'>热门评论</text>
+  <block wx:for="{{news_review}}">
+    <view class='review-details'>
+      <view class='review-user'>
+        <image src="{{item.headimgurl}}"></image>
+        <view class='user-cen'>
+          <text class='user-cen-name'>{{item.nickname}}</text>
+          <text>{{item.time}}</text>
+        </view>
+        <view class='like-num' bindtap='onLike1' data-cid="{{item.id}}" data-len="{{index}}" data-like="{{item.is_like}}">
+          <image wx:if="{{item.is_like>0}}" src="../images/new8.png"></image>
+          <image wx:else src='../images/new7.png'></image>
+          <text>{{item.count}}</text>
+        </view>
+      </view>
+      <view class='review-content'>
+        {{item.text}}
+      </view>
+    </view>
+  </block>
+</view>
+<view class='foot'>
+  <input bindinput='bindReview' placeholder='点击评价'></input>
+  <view class='foot-read' bindtap='onReview'>
+    发表评论
+  </view>
+  <!-- <image src='../images/new11.png'></image> -->
+
+</view>
+<!-- <template is="wxParse" data="{{wxParseData:article.nodes}}" /> -->

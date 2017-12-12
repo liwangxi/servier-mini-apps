@@ -1,0 +1,36 @@
+/* pages/shop/shop-success.wxss */
+.contain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    color: #666666;
+    font-size: 32rpx;
+}
+.success-icon{
+    background: #f7f8f8;
+    display: flex;
+    flex-direction: row;
+    font-size: 50rpx;
+    color: #666666;
+    width: 80%;
+    margin:227rpx auto 88rpx;
+    padding: 60rpx 0;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12rpx;
+}
+.success-icon image{
+    width: 83rpx;
+    height: 83rpx;
+    margin-right: 20rpx;
+}
+.btn{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 126rpx;
+    color: #fff;
+    background: #00a0e9;
+}
+

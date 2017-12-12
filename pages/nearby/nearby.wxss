@@ -1,0 +1,95 @@
+/* pages/nearby/nearby.wxss */
+.nearby{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.nearby-lock-detail{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+    padding: 40rpx 25rpx 40rpx 0;
+    flex:auto;
+}
+.lock-head{
+    margin-right: 30rpx;
+    margin-left: 30rpx;
+    position: relative;
+}
+.head-img{
+    width: 120rpx;
+    height: 120rpx;
+    border-radius: 50%;
+}
+.head-good{
+    width:64rpx;
+    height:20rpx; 
+    position: absolute;
+    bottom:20rpx;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.nearby-center{
+    display: flex;
+    flex-direction: column;
+    color: #666;
+    font-size:26rpx; 
+}
+.nearby-list1,.nearby-list2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.lock-name{
+    font-size: 36rpx;
+    color: #000;
+    margin-right: 20rpx;
+}
+.nearby-list1 image{
+    width: 32rpx;
+    height: 32rpx;
+}
+.nearby-list2 text{
+    margin-right: 5rpx;
+}
+.nearby-right{
+    display: flex;
+    flex-direction: row;
+    font-size: 30rpx;
+    align-items: center;
+}
+.iconfont {
+  font-size: 50rpx;
+  color: #ccc;
+}
+.nearby-right image{
+    width: 20px;
+    height: 30px;
+}
+.like-num{
+    margin: auto 8rpx;
+}
+.icon-icon{
+    color: #1296db;
+}
+.icon-nv{
+    color: #d72007
+}
+.icon-xihuan2{
+    color: #d81e06;
+}
+.icon-xihuan{
+    color: #d81e06;
+}
+.iconfont{
+    margin: auto;
+}
+.noNearby{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 30rpx;
+    color: #ccc;
+}

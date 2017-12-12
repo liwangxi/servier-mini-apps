@@ -1,0 +1,68 @@
+/* pages/shop/shop-earn.wxss */
+
+.tab {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-bottom: 1px solid #eee;
+  overflow: hidden;
+  padding: 17rpx 0;
+}
+
+.tab view {
+  text-align: center;
+  flex: 1;
+  justify-content: center;
+}
+
+.tab view text {
+  padding: 15rpx 35rpx;
+}
+
+.tab view text.active {
+  border-bottom: 2rpx solid #3d99ff;
+  color: #3d99ff;
+}
+
+.tab-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+}
+
+.item-left {
+  padding: 20rpx;
+  font-size: 34rpx;
+  color: #293a4d;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.item-left text:last-child {
+  color: #afafaf;
+  font-size: 24rpx;
+}
+
+.item-center {
+  font-size: 34rpx;
+  margin-left: 30rpx;
+  color: #293a4d;
+  flex: auto;
+  padding-bottom: 40rpx;
+}
+
+.item-right {
+  color: #3d99ff;
+  padding-right: 20rpx;
+  align-items: center;
+  vertical-align: middle;
+}

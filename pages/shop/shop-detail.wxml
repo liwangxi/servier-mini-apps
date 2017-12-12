@@ -1,0 +1,29 @@
+<!--pages/shop/shop-detail.wxml-->
+<view class='contain'>
+  <image class='back-img' src='../images/inte-1.jpg'></image>
+  <view class='head-detail'>
+    <text>{{product_detail.name}}</text>
+    <text>{{product_detail.des}}</text>
+    <view class='price'>
+      <text>积分+金额:</text>
+      <text>{{product_detail.points}}+{{product_detail.price}}</text>
+    </view>
+  </view>
+  <view class='shop-detail'>
+    <text class='shop-head'>商品详情</text>
+    <text class='shop-time'>
+      商品领取时间: {{product_detail.start_time}}至{{product_detail.end_time}}
+    </text>
+    <view class='shop-img'>
+      <image wx:for="{{product_detail.images}}" src='{{item}}'></image>
+    </view>
+  </view>
+  <view class='shop-rule' >
+    <text class='rule-detail'>开锁工具包、多功能包，让您轻松无忧！</text>
+    <view class='rule'>
+      <text>使用规则</text>
+      <text>{{product_detail.using}}</text>
+    </view>
+  </view>
+  <button class='btn'>我要兑换</button>
+</view>

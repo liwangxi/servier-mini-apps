@@ -1,0 +1,23 @@
+<!--pages/shop/shop-earn.wxml-->
+<view class='tab' >
+  <view bindtap='onTab' data-cid="0">
+    <text class="{{payment==0?'active':''}}">收入</text>
+  </view>
+  <view bindtap='onTab' data-cid="1">
+    <text class="{{payment==1?'active':''}}">支出</text>
+  </view>
+</view>
+<view class='tab-list'>
+  <block wx:for="{{earn}}">
+    <view class='item'>
+      <view class='item-left'>
+        <text>{{item.integral_type}}</text>
+        <text>{{item.time}}</text>
+      </view>
+      <text class='item-center'>
+      工具包五件套
+    </text>
+      <text class='item-right'>{{item.integral}}</text>
+    </view>
+  </block>
+</view>

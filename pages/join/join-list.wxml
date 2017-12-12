@@ -1,0 +1,17 @@
+<swiper class="swiper-around" indicator-dots="{{true}}" circular="true" autoplay="{{true}}" interval="{{3000}}" duration="{{500}}">
+  <block wx:for="{{banner_list}}">
+    <swiper-item>
+      <image src="{{item.img}}" />
+    </swiper-item>
+  </block>
+</swiper>
+<view class='join-list' >
+  <block wx:for="{{logo_list}}">
+    <image bindtap='onClick' id="{{item.id}}" mode="widthFix" src="{{item.img}}"></image>
+  </block>
+
+
+</view>
+<view class='foot' bindtap='onReg'>
+  我是企业,我要加盟
+</view>

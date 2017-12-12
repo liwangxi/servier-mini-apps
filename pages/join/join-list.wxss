@@ -1,0 +1,36 @@
+/* pages/join/join-list.wxss */
+.contain{
+  padding:60rpx 20rpx;
+  background: #fff;
+}
+.swiper-around {
+  width: 100%;
+  height: 280rpx;
+}
+.swiper-around image {
+  width: 100%;
+  height: 280rpx;
+}
+.join-list{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10rpx;
+  box-sizing: border-box;
+}
+.join-list image{
+  width: 33.33%;
+  padding: 5rpx;
+  box-sizing: border-box;
+}
+.foot{
+  width: 100%;
+  height: 100rpx;
+  text-align: center;
+  color: #fff;
+  background: #b3bfcc;
+  font-size: 34rpx;
+  line-height: 100rpx;
+  position: fixed;
+  bottom: 0;
+}
